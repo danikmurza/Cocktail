@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Sign Up -->
+    <form id="sing-up-form">
+      <label for="userName">User Name</label><input id="userName" type="text" placeholder="User Name" value="" />
+      <label for="password">Password</label><input id="password" type="password" placeholder="Password" value="" />
+      <button id="rgstr_btn" type="submit" disabled>sign up</button>
+    </form>
+
+    <!-- Log In -->
+    <form id="login-form">
+      <input
+        id="logInName"
+        type="text"
+        placeholder="Log In Username"
+        value=""
+      />
+      <div class="password-field">
+        <input
+          id="logInPassword"
+          type="password"
+          placeholder="Enter Password"
+          value=""
+        />
+        <span class="icon">D</span>
+      </div>
+      <button id="login_btn" type="submit" disabled>login</button>
+    </form>
+    <div>
+      <h2>
+        !!!Below is a sample image please study the code if you want to add
+        image
+      </h2>
+      <h3>!!!Image added through css styling - WEBPACK does not like image</h3>
+      <div id="image-sample"></div>
+    </div>
+  </body>
+  <script type="module" src="./main.js"></script>
+</html>
