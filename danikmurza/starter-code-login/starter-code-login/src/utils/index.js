@@ -26,8 +26,8 @@ export function store(userName, password) {
 }
 
 // checking data in the local storage
-export function check(event) {
-  event.preventDefault();
+export function check() {
+  // event.preventDefault();
 
   let attempts = Number(localStorage.getItem("attempts"));
   console.log(attempts);
@@ -56,6 +56,7 @@ export function check(event) {
     alert("ERROR");
   } else {
     localStorage.setItem("attempts", 0);
+    localStorage.setItem("loginPage", 1)
     alert("You are loged in.");
   }
 }
