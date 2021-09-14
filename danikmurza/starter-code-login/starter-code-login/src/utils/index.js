@@ -30,7 +30,7 @@ export function check() {
   // event.preventDefault();
 
   let attempts = Number(localStorage.getItem("attempts"));
-  console.log(attempts);
+
 
   // stored data from the register-form
   const storedUserName = localStorage.getItem("userName");
@@ -57,6 +57,7 @@ export function check() {
   } else {
     localStorage.setItem("attempts", 0);
     localStorage.setItem("loginPage", 1)
+    document.getElementById('login-form').style.display = "none"
     alert("You are loged in.");
   }
 }
